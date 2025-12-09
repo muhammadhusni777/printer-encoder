@@ -15,7 +15,7 @@ float elapsedTime;
 float timePrev;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(encoder0PinA, INPUT_PULLUP);
   pinMode(encoder0PinB, INPUT_PULLUP);
   attachInterrupt(0, doEncoder, CHANGE);
